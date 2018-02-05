@@ -61,7 +61,7 @@ msgid ""
 "check the form. Check the form and explicitly delete {noun_lower}s if not "
 "needed."
 msgstr ""
-"{noun} был добавлен без зоголовка. Все {noun_lower} обязаны иметь заголовки. Пожалуйста, "
+"{noun} был добавлен без заголовка. Все {noun_lower} обязаны иметь заголовки. Пожалуйста, "
 "проверьте форму и явно удалите {noun_lower} если в них нет необходимости."
 
 #: poll.py

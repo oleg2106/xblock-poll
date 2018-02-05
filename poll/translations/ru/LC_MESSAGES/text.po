@@ -18,41 +18,41 @@ msgstr ""
 
 #: poll.py
 msgid "Whether or not to display results to the user."
-msgstr ""
+msgstr "Показывать ли студенту результаты."
 
 #: poll.py
 msgid "The maximum number of times a user may send a submission."
-msgstr ""
+msgstr "Максимальное допустимое количество отправок ответов одним студентом."
 
 #: poll.py
 msgid "Number of times the user has sent a submission."
-msgstr ""
+msgstr "Сколько раз студент отправил свои ответы."
 
 #: poll.py
 msgid "Text to display after the user votes."
-msgstr ""
+msgstr "Текст, показываемый студенту, после того, как он отправил свои ответы."
 
 #: poll.py
 #, python-brace-format
 msgid "'{field}' is not present, or not a JSON array."
-msgstr ""
+msgstr "'{field}' отсутствует или не является JSON массивом"
 
 #: poll.py
 #, python-brace-format
 msgid "{noun} {item} not a javascript object!"
-msgstr ""
+msgstr "{noun} {item} не является объектом javascript"
 
 #: poll.py
 #, python-brace-format
 msgid "{noun} {item} contains no key."
-msgstr ""
+msgstr "{noun} {item} не содержат ключи."
 
 #: poll.py
 #, python-brace-format
 msgid ""
 "{noun} has no text or img. Please make sure all {noun_lower}s have one or "
 "the other, or both."
-msgstr ""
+msgstr "Для {noun} отсутствует описание или ссылка на изображение. Пожалуйста, проверьте все {noun_lower}."
 
 #: poll.py
 #, python-brace-format
@@ -61,171 +61,180 @@ msgid ""
 "check the form. Check the form and explicitly delete {noun_lower}s if not "
 "needed."
 msgstr ""
+"{noun} был добавлен без зоголовка. Все {noun_lower} обязаны иметь заголовки. Пожалуйста, "
+"проверьте форму и явно удалите {noun_lower} если в них нет необходимости."
 
 #: poll.py
 msgid ""
 "All images must have an alternative text describing the image in a way that "
 "would allow someone to answer the poll if the image did not load."
 msgstr ""
+"Все изображения должны иметь текст с описанием этого изображения. "
+"Это поможет пользователю ответить на опрос, даже если изображения не загрузятся."
 
 #: poll.py
 #, python-brace-format
 msgid "You must include at least one {noun_lower}."
-msgstr ""
+msgstr "Добавьте хотя бы один {noun_lower}."
 
 #: poll.py
 msgid "Maximum Submissions missing or not an integer."
-msgstr ""
+msgstr "Параметр \"Максимальное Количество Отправок\" отсутствует или не является целым числом."
 
 #: poll.py
 msgid "Private results may not be False when Maximum Submissions is not 1."
-msgstr ""
+msgstr "Параметр \"Скрыть результаты\" не может быть False если \"Максимальное Количество Отправок\" не равно 1."
 
 #: poll.py
 msgid "Total tally of answers from students."
-msgstr ""
+msgstr "Полный набор ответов от студентов."
 
 #: poll.py
 msgid "The student's answer"
-msgstr ""
+msgstr "Ответ студента"
 
 #: poll.py
 msgid "You have already voted in this poll."
-msgstr ""
+msgstr "Вы уже отвечали на этот опрос."
 
 #: poll.py
 msgid "Answer not included with request."
-msgstr ""
+msgstr "Ответ не включен в запрос."
 
 #: poll.py
 #, python-brace-format
 msgid "No key \"{choice}\" in answers table."
-msgstr ""
+msgstr "В таблице ответов отсутствует ключ \"{choice}\"."
 
 #: poll.py
 msgid "You have already voted as many times as you are allowed."
-msgstr ""
+msgstr "Вы уже использовали максимальное количество попыток для ответа."
 
 #: poll.py
 msgid "You must specify a question."
-msgstr ""
+msgstr "Необходимо задать вопрос."
 
 #: poll.py
 msgid "Answer choices for this Survey"
-msgstr ""
+msgstr "Варианты ответа для данной Анкеты"
 
 #: poll.py
 msgid "Are you enjoying the course?"
-msgstr ""
+msgstr "Вам нравится данный курс?"
 
 #: poll.py
 msgid "Would you recommend this course to your friends?"
-msgstr ""
+msgstr "Порекомендуете ли вы данный курс своим друзьям?"
 
 #: poll.py
 msgid "Do you think you will learn a lot?"
-msgstr ""
+msgstr "Вы считаетесь, что научитесь многому?"
 
 #: poll.py
 msgid "Questions for this Survey"
-msgstr ""
+msgstr "Вопросы для данной Анкеты"
 
 #: poll.py
 msgid "Survey"
-msgstr ""
+msgstr "Анкета"
 
 #: poll.py
 msgid "The user's answers"
-msgstr ""
+msgstr "Ответы студента"
 
 #: poll.py
 msgid ""
 "Not all questions were included, or unknown questions were included. Try "
 "refreshing and trying again."
 msgstr ""
+"Были получены ответы не на все вопросы или получены ответы на "
+"несуществующие вопросы. Обновите страницу и попробуйте заного."
+
 
 #: poll.py
 #, python-format
 msgid "Found unknown answer '{answer_key}' for question key '{question_key}'"
-msgstr ""
+msgstr "Неизвестный ответ '{answer_key}' для вопроса с ключом '{question_key}'"
 
 #: poll.py
 msgid "Poll"
-msgstr ""
+msgstr "Опрос"
 
 #: poll.py
 msgid "What is your favorite color?"
-msgstr ""
+msgstr "Каков Ваш любимый цвет?"
 
 #: poll.py
 msgid "Red"
-msgstr ""
+msgstr "Красный"
 
 #: poll.py
 msgid "Blue"
-msgstr ""
+msgstr "Синий"
 
 #: poll.py
 msgid "Other"
-msgstr ""
+msgstr "Другой"
 
 #: poll.py
 msgid "The answer options on this poll."
-msgstr ""
+msgstr "Варианты ответов для данного опроса."
 
 #: poll.py
 msgid "Answer"
-msgstr ""
+msgstr "Ответ"
 
 #: poll.py
 msgid "Question"
-msgstr ""
+msgstr "Вопрос"
 
 #: poll.py
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: poll.py
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: poll.py
 msgid "Maybe"
-msgstr ""
+msgstr "Возможно"
 
 #: public/handlebars/poll_results.handlebars
 msgid "Results gathered from {total} respondents."
-msgstr ""
+msgstr "Результаты {total} респондентов."
 
 #: public/handlebars/poll_results.handlebars
 msgid "Results gathered from {total} respondent."
-msgstr ""
+msgstr "Результаты {total} респондентов."
 
 #: public/handlebars/poll_studio.handlebars
 msgid "move poll up"
-msgstr ""
+msgstr "переместить опрос выше"
 
 #: public/handlebars/poll_studio.handlebars
 msgid "move poll down"
-msgstr ""
+msgstr "переместить опрос ниже"
 
 #: public/handlebars/poll_studio.handlebars
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: public/handlebars/poll_studio.handlebars
 msgid "Image URL"
-msgstr ""
+msgstr "Ссылка на изображение"
 
 #: public/handlebars/poll_studio.handlebars
 msgid "Image alternative text"
-msgstr ""
+msgstr "Текст с описанием для изображения"
 
 #: public/handlebars/poll_studio.handlebars
 msgid ""
 "You can make limited use of Markdown in answer texts, preferably only bold "
 "and italics."
-msgstr ""
+msgstr 
+"Вы можете ограничить использование Markdown в текстах ответов, "
+"например оставить только жирный шрифт и курсив."
 
 #: public/handlebars/poll_studio.handlebars
 msgid ""
@@ -234,3 +243,6 @@ msgid ""
 " a way that would allow someone to answer the poll if the image did not "
 "load."
 msgstr ""
+"Обязательно наличие текста или изображения, или и того и другого. Изображение "
+"должно иметь сопроводительный текст. В таком случае пользователь сможет "
+"ответить на опрос, даже если изображение не загрузится."

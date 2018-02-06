@@ -202,11 +202,11 @@ msgstr "Возможно"
 
 #: public/handlebars/poll_results.handlebars
 msgid "Results gathered from {total} respondents."
-msgstr "Результаты {total} респондентов."
+msgstr "Результаты получены от {total} респондентов."
 
 #: public/handlebars/poll_results.handlebars
 msgid "Results gathered from {total} respondent."
-msgstr "Результаты {total} респондентов."
+msgstr "Результаты получены от {total} респондентов."
 
 #: public/handlebars/poll_studio.handlebars
 msgid "move poll up"

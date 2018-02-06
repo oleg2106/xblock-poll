@@ -25,6 +25,8 @@ from collections import OrderedDict
 import functools
 import json
 import time
+import datetime
+import pytz
 
 from markdown import markdown
 import pkg_resources
@@ -37,7 +39,6 @@ from xblockutils.publish_event import PublishEventMixin
 from xblockutils.resources import ResourceLoader
 from xblockutils.settings import XBlockWithSettingsMixin, ThemableXBlockMixin
 from .utils import _
-
 
 try:
     # pylint: disable=import-error
@@ -351,11 +352,32 @@ class PollBase(XBlock, ResourceMixin, PublishEventMixin):
 
         return items
 
+    def past_due(self):
+        """
+        Return whether due date has passed.
+        """
+        due = self.due
+        try:
+            graceperiod = self.graceperiod
+        except AttributeError:
+            # graceperiod and due are defined in InheritanceMixin
+            # It's used automatically in edX but the unit tests will need to mock it out
+            graceperiod = None
+
+        if graceperiod is not None and due:
+            close_date = due + graceperiod
+        else:
+            close_date = due
+
+        if close_date is not None:
+            return datetime.datetime.now(tz=pytz.utc) > close_date
+        return False
+
     def can_vote(self):
         """
         Checks to see if the user is permitted to vote. This may not be the case if they used up their max_submissions.
         """
-        return self.max_submissions == 0 or self.submissions_count < self.max_submissions
+        return not self.past_due() and (self.max_submissions == 0 or self.submissions_count < self.max_submissions)
 
     def can_view_private_results(self):
         """
